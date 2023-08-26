@@ -1,0 +1,17 @@
+pipeline
+{
+agent any
+stages
+ {
+   stage('Commit')
+      steps
+        {
+            echo "This is Code Download from GIT Project Repository.................."
+        }
+   stage('Build')
+      steps
+        {
+            echo "This is Build project using maven.................."
+        }
+ }
+}
